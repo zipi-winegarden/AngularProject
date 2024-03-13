@@ -1,0 +1,43 @@
+.container {
+    margin-top: 5rem;
+  }
+  
+  .jumbotron {
+    background-color: #fff4e6;
+  }
+  
+  .card {
+    background-color: #fff4e6;
+    border: 1px solid #ff0066;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #888888;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-title {
+    color: #ff0066;
+    font-family: 'Comic Sans MS', sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px #ff99cc;
+  }
+  
+  .form-group label {
+    color: #ff0066;
+    font-family: 'Comic Sans MS', sans-serif;
+    font-weight: bold;
+  }
+  
+  .form-control {
+    border-color: #ff0066;
+    border-radius: 5px;
+  }
+  
+  .card-img-top {
+    width: 100%;
+    height: auto;
+  }
+  

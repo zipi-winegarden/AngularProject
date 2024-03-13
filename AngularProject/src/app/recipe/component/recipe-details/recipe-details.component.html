@@ -1,0 +1,33 @@
+
+<div class="recipe-details">
+    <h2>{{ recipe.recipeName }}</h2>
+    <div>
+      Category:
+      <img [src]="getCategoryIcon()" alt="Category Icon" />
+      <span>{{ getCategoryName() }} </span> 
+   
+    </div>
+    <p>Difficulty:
+      <span *ngFor="let star of [1, 2, 3, 4, 5]">
+        <ng-container *ngIf="star <= recipe.difficultyLevel">&#9733;</ng-container>
+        <ng-container *ngIf="star > recipe.difficultyLevel">&#9734;</ng-container>
+      </span>
+    </p>
+    <img [src]="recipe.imageRouting" alt="Recipe Image">
+    <h3>Ingredients</h3>
+    <ul>
+      <li *ngFor="let ingredient of recipe.ingredients">
+        <i class="fas fa-utensil-spoon"></i> {{ ingredient }}
+      </li>
+    </ul>
+    <h3>Preparation</h3>
+    <ol>
+      <li *ngFor="let step of recipe.preparationMethod">{{ step }}</li>
+    </ol>
+    
+    <div *ngIf="isCurrentUserRecipeCreator()">
+      <button (click)="deleteRecipe()">Delete Recipe</button>
+      <button (click)="edit()">Edit Recipe</button>
+    </div>
+  </div>
+  

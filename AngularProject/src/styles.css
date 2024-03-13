@@ -1,0 +1,10 @@
+body {
+    /* הוסף קישור לתמונת הרקע */
+    background-image: url("./assets/images/logo3.png");
+    
+    /* הגדר פרמטרים נוספים לתמונת הרקע */
+    background-size: 270px 200px; /* גודל התמונה הוא 50 על 50 פיקסלים */
+    background-position: center; /* מיקום מרכזי של התמונה בחלון */
+    background-repeat: repeat; /* חזרה של התמונה בשני הכיוונים */
+    /* אפשר להוסיף פרמטרים נוספים כגון background-color עבור מקרה שהתמונה אינה זמינה */
+}

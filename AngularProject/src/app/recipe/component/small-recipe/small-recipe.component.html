@@ -1,0 +1,7 @@
+
+<div class="container small-recipe" (click)="navigateToRecipeDetails()">
+  <img [src]="recipe.imageRouting" alt="Recipe Image" class="img-fluid">
+  <h3>{{ recipe.recipeName }}</h3>
+  <p>Preparation Time: {{ recipe.preparationTimeMinutes | timeconvert  }}</p>
+  <p>Difficulty: {{ recipe.difficultyLevel }}</p>
+</div>
